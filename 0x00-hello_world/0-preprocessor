@@ -1,0 +1,2 @@
+#!/bin/betty
+gcc -E $CFILE -o c
