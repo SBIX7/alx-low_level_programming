@@ -11,7 +11,10 @@ char T[] = "abcdefghijklmnopqrstuvwxyz";
 while (T[i] != '\0')
 {
 	if (T[i] == 'q' || T[i] == 'e')
+	{
+		i++;
 		continue;
+	}
 	putchar(T[i]);
 	i++;
 }
