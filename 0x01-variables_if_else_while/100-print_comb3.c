@@ -14,8 +14,8 @@ for (i = 0; i < 9; i++)
 {
 	for (j = a; j < 10; j++)
 	{
-		putchar('0'+i);
-		putchar('0'+j);
+		putchar('0' + i);
+		putchar('0' + j);
 		if (i < 8)
 		{
 			putchar(',');
@@ -24,5 +24,6 @@ for (i = 0; i < 9; i++)
 	}
 	a++;
 }
+putchar('\n');
 return (0);
 }
