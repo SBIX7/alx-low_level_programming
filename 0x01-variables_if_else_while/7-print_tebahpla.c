@@ -9,7 +9,7 @@ int main(void)
 {
 char T[] = "zyxwvutsrqponmlkjihgfedcba";
 int i = 0;
-while(T[i] != '\0')
+while (T[i] != '\0')
 {
 	putchar(T[i]);
 	i++;
