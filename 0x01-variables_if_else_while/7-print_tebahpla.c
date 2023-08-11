@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+char T[] = "zyxwvutsrqponmlkjihgfedcba";
+int i = 0;
+while(T[i] != '\0')
+{
+	putchar(T[i]);
+	i++;
+}
+putchar('\n');
+}
