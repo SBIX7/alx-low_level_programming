@@ -11,14 +11,14 @@ char T[] = "abcdefghijklmnopqrstuvwxyz";
 char D[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 while (T[i] != '\0')
 {
-        putchar(T[i]);
-        i++;
+	putchar(T[i]);
+	i++;
 }
-i=0;
+i = 0;
 while (D[i] != '\0')
 {
-        putchar(D[i]);
-        i++;
+	putchar(D[i]);
+	i++;
 }
 
 putchar('\n');
