@@ -8,4 +8,5 @@ void _putchar(char T[])
 		putchar(T[i]);
 		i++;
 	}
+putchar('\n');
 }
