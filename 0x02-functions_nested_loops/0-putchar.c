@@ -1,5 +1,5 @@
 #include<stdio.h>
-
+#include"main.h"
 /**
  * main - check the code
  *
@@ -8,11 +8,6 @@
 int main(void)
 {
 char T[] = "_putchar";
-int i = 0;
-while (T[i] != '\0');
-	{
-		putchar(T[i]);
-		i++;
-	}
+_putchar(T);
 return (0);
 }
