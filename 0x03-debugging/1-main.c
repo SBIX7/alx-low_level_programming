@@ -1,12 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - Entry point of the program
- *
- * Description: This function avoids an infinite loop and prints a message.
- *
- * Return: Always 0 (Success)
- */
+* main - causes an infinite loop
+* Return: 0
+*/
 int main(void)
 {
     int i;
