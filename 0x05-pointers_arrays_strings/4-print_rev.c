@@ -8,10 +8,10 @@
 void print_rev(char *s)
 {
 int i = 0;
-*s = strrev(s);
-while (str[i] != '\0')
+strrev(s);
+while (s[i] != '\0')
 {
-	putchar(str[i]);
+	_putchar(s[i]);
 	i++;
 }
 }
