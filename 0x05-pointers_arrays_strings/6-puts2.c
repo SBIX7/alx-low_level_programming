@@ -15,4 +15,10 @@ while (str[i+1] != '\0')
 	a--;
 }
 str[a+1] = '\0';
+i = 0;
+while (str[i] != '\0')
+{
+	_putchar(str[i]);
+	i++;
+}
 }
