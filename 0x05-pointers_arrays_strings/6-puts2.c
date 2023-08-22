@@ -5,16 +5,21 @@
  * @str: string
  * return; string
  */
-void puts2(char *str)
+void puts_half(char *str)
 {
-int i = 0;
-while (str[i] != '\0')
-{
-	_putchar(str[i]);
-	if (str[i + 1] != '\0')
-	{
-		_putchar(str[i + 1]);
-	}
-	i += 2;
-}
+	int a, n, longi;
+
+	longi = 0;
+
+	for (a = 0; str[a] != '\0'; a++)
+		longi++;
+
+	n = (longi / 2);
+
+	if ((longi % 2) == 1)
+		n = ((longi + 1) / 2);
+
+	for (a = n; str[a] != '\0'; a++)
+		_putchar(str[a]);
+	_putchar('\n');
 }
