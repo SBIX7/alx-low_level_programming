@@ -7,5 +7,6 @@
  */
 void reset_to_98(int *n)
 {
+/* Update the value at the memory location pointed to by 'n' to 98 */
 *n = 98;
 }
