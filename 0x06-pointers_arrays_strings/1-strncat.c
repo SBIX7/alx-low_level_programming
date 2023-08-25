@@ -1,5 +1,5 @@
 #include <string.h>
-#include <main.h>
+#include "main.h"
 
 /**
  * _strncat - Parado no bailo.
