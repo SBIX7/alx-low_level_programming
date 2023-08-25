@@ -2,16 +2,17 @@
 
 /**
  * reverse_array - Reverses the content of an array of integers.
- * @a: INT a.
- * @n: Size of table.
+ * @a: Array of integers.
+ * @n: Size of the array.
  *
- * Return: Reversed table.
+ * Return: Nothing.
  */
 void reverse_array(int *a, int n)
 {
 int i;
 int b;
-for (i = 0 ;i < n / 2 ;i++)
+
+for (i = 0; i < n / 2; i++)
 {
 	b = a[i];
 	a[i] = a[n - 1 - i];
