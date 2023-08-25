@@ -15,4 +15,5 @@ while (n[i] != '\0')
 	n[i] = n[i] - 32;
 	i++;
 }
+return (n);
 }
