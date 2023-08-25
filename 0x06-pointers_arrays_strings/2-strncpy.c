@@ -3,13 +3,13 @@
 
 /**
  * _strncpy - Copying function.
- * @dest: Dest str.
- * @src: Src str.
- * @n: Num of src.
+ * @dest: Destination string.
+ * @src: Source string.
+ * @n: Number of characters to copy.
  *
- * Return: Dest str and n str.
+ * Return: A pointer to the destination string.
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	return (strncpy(dest,src,n));
+	return (strncpy(dest, src, n));
 }
