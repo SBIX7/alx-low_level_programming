@@ -1,14 +1,23 @@
-#include <string.h>
 #include "main.h"
-
 /**
- * _strpbrk - Finds the first occurrence of one character from a string in the source string.
- * @s: The source string.
- * @accept: The string containing the characters to search.
- *
- * Return: A pointer to the byte found, or NULL if not found.
+ * _strpbrk - Entry point
+ * @s: input
+ * @accept: input
+ * Return: Always 0 (Success)
  */
 char *_strpbrk(char *s, char *accept)
 {
-return (strpbrk(s, accept));
+		int k;
+
+		while (*s)
+		{
+			for (k = 0; accept[k]; k++)
+			{
+			if (*s == accept[k])
+			return (s);
+			}
+		s++;
+		}
+
+	return ('\0');
 }
