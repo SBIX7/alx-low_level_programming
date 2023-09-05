@@ -14,10 +14,10 @@ char *a;
 unsigned int i;
 if (size == 0)
 	return (NULL);
-a = malloc (sizeof(unsigned int));
+a = malloc(sizeof(unsigned int));
 if (a == NULL)
 	return (NULL);
-for (i = 0; i < size; i++)
+for (i = 0; i < size - 1; i++)
 {
 	a[i] = c;
 }
