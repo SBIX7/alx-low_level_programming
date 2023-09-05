@@ -15,6 +15,8 @@ unsigned int i;
 if (size == 0)
 	return (NULL);
 a = malloc (sizeof(unsigned int));
+if (a == NULL)
+	return (NULL);
 for (i = 0; i < size; i++)
 {
 	a[i] = c;
