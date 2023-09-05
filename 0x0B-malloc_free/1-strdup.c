@@ -14,5 +14,7 @@ char *arr;
 if (str == NULL)
 	return (NULL);
 arr = malloc(strlen(str) + 1);
-return (strcpy(arr,str));
+if (arr == NULL)
+	return (NULL);
+return (strcpy(arr, str));
 }
