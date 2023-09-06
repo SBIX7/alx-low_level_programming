@@ -17,6 +17,7 @@ if (s1 == NULL && s2 == NULL)
 arr = malloc(strlen(s1) + strlen(s2) + 1);
 if (arr == NULL)
 	return (NULL);
-arr = strcat(s1, s2);
-return arr;
+strcpy(arr, s1 ? s1 : "");
+strcat(arr, s2 ? s2 : "");
+return (arr);
 }
