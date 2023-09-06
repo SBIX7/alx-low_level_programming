@@ -62,12 +62,12 @@ char **strtow(char *str)
 				while (start < end)
 					*tmp++ = str[start++];
 				*tmp = '\0';
-OBOBOBOB				matrix[k] = tmp - c;
+				matrix[k] = tmp - c;
 				k++;
 				c = 0;
-OBOBOBOB			}
+			}
 		}
-OBOBOBOB		else if (c++ == 0)
+		else if (c++ == 0)
 			start = i;
 	}
 
