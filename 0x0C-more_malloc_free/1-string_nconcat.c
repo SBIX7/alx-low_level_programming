@@ -17,6 +17,6 @@ arr = malloc(strlen(s1) + 1 + n >= strlen(s2) ? strlen(s2) : n);
 if (arr == NULL)
 	return (NULL);
 strcpy(arr, s1);
-strncat(arr, s2);
+strncat(arr, s2, n);
 return (arr);
 }
