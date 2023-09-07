@@ -17,7 +17,7 @@ if (s1 == NULL)
 	s1 = "";
 if (s2 == NULL)
 	s2 = "";
-arr = malloc(strlen(s1) + 1 + n >= strlen(s2) ? strlen(s2) : n);
+arr = (char *)malloc(strlen(s1) + 1 + n >= strlen(s2) ? strlen(s2) : n);
 if (arr == NULL)
 	return (NULL);
 strcpy(arr, s1);
