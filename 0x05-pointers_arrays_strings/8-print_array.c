@@ -2,22 +2,26 @@
 #include <stdio.h>
 
 /**
- * print_array - a function that prints n elements of an array
- * @a: array name
- * @n: is the number of elements OF the array to be printed
- * Return: a and n inputs
+ * print_array - prints all elements of an array of integers
+ * @a: the array
+ * @n: the length of the array
  */
+
 void print_array(int *a, int n)
 {
 	int i;
 
-	for (i = 0; i < (n - 1); i++)
+	i = 0;
+	if (n >= 0)
 	{
-		printf("%d, ", a[i]);
-	}
-		if (i == (n - 1))
+		while (i < n)
 		{
-			printf("%d", a[n - 1]);
+			if (i + 1 < n)
+				printf("%d, ", a[i]);
+			else
+				printf("%d", a[i]);
+			i++;
 		}
-			printf("\n");
+	}
+	printf("\n");
 }

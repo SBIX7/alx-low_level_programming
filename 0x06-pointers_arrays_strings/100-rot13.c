@@ -1,30 +1,34 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * rot13 - encoder rot13
- * @s: pointer to string params
- *
- * Return: *s
- */
+ * rot13 - rotate by 13 places 'Caesar Cipher'
+ * @s: the string to convert
+ * Return: the converted string
+ **/
 
 char *rot13(char *s)
 {
 	int i;
 	int j;
-	char data1[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char datarot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-	for (i = 0; s[i] != '\0'; i++)
+	char *array1 = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	char *array2 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+
+	i = 0;
+
+	while (s[i])
 	{
-		for (j = 0; j < 52; j++)
+		j = 0;
+		while (array2[j])
 		{
-			if (s[i] == data1[j])
+			if (array2[j] == s[i])
 			{
-				s[i] = datarot[j];
+				s[i] = array1[j];
 				break;
 			}
+			j++;
 		}
+		i++;
 	}
 	return (s);
 }

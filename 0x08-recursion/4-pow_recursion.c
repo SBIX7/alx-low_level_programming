@@ -1,18 +1,18 @@
 #include "main.h"
 
 /**
- * _pow_recursion - Fuction that return the x power y.
- * @x: The first integer.
- * @y: The second integer.
- *
- * Return: x power y.
+ * _pow_recursion - calculates x to the power of y
+ * @x: the base
+ * @y: the power
+ * Return: x to the power of y if y > 0, -1 otherwise.
  */
+
 int _pow_recursion(int x, int y)
 {
-if (y < 0)
-	return (-1);
-else
-	if (y == 0)
+	if (y < 0)
+		return (-1);
+	if (y < 1)
 		return (1);
-return (x * _pow_recursion(x, y - 1));
+	else
+		return (x * _pow_recursion(x, y - 1));
 }
