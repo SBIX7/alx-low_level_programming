@@ -1,6 +1,6 @@
 #include "main.h"
 
-int _strcmp(char *s1, char *s2) {
+int _putchar(char c) {
     /* Function body placeholder */
     return 0;
 }

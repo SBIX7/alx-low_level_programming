@@ -1,6 +1,7 @@
 #include "main.h"
 
-main()
-{
-
+int _abs(int n) {
+    /* Function body placeholder */
+    return 0;
 }
+

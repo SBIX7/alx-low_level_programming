@@ -1,6 +1,7 @@
 #include "main.h"
 
-main()
-{
-
+int _isalpha(int c) {
+    /* Function body placeholder */
+    return 0;
 }
+

@@ -1,6 +1,7 @@
 #include "main.h"
 
-main()
-{
-
+char *_strpbrk(char *s, char *accept) {
+    /* Function body placeholder */
+    return NULL;
 }
+

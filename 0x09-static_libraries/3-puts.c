@@ -1,6 +1,6 @@
 #include "main.h"
 
-main()
-{
-
+void _puts(char *s) {
+    /* Function body placeholder */
 }
+

@@ -1,6 +1,9 @@
+// _strncat.c
+
 #include "main.h"
 
-main()
-{
-
+char *_strncat(char *dest, char *src, int n) {
+    // Fonction vide, pas de code à l'intérieur
+    return dest; // Ou retourner NULL ou une autre valeur appropriée
 }
+
