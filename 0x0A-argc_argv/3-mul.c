@@ -4,7 +4,7 @@
 
 /**
  * main - main code.
- * Description: a program that work like a calculator of two argument given in the command line.
+ * Description: a program that work like a calculator of two argument.
  * @argc: the number of the arguments passed.
  * @argv: list of the pointers for strings.
  * Return: null.
