@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include "main.h"
+
 /**
  * a programm that return the name of itslef
  * @argc: the number of argument commited to the programm from command line
