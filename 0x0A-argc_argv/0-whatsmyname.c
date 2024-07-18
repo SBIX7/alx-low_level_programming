@@ -2,14 +2,15 @@
 #include <stdio.h>
 
 /**
- * main - a programm that return the name of itslef
- * @argc: the number of argument commited to the programm from command line.
- * @argv: a pointer the a string.
- * Return: the name of the programme.
+ * main - Entry point
+ * Description: prints the program name.
+ * @argc: the number of arguments.
+ * @argv: the array of arguments.
+ * Return: always 0.
  */
 
 int main(int argc, char const *argv[])
 {
-	printf("%s\n", argv[argc-1]);
-	return (0);
+    printf("%s\n", argv[argc - 1]);
+    return (0);
 }
