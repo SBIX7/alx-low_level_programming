@@ -9,8 +9,13 @@
  * Return: always 0 if the programm succefully executed.
  */
 
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wunused-parameter"
+
 int main(int argc, char const **argv)
 {
-	printf("%d", argc);
+	printf("%d\n", argc);
 	return (0);
 }
+
+#pragma GCC diagnostic pop
