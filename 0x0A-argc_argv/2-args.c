@@ -2,20 +2,20 @@
 #include <stdio.h>
 
 /**
- * main - a function that print all arguments passed to to program.
- * Description: nthng
- * @argc: the number of the arguments passed to program.
- * @argv: list of pointers of strings.
- * @i: number of iteration.
+ * main - a function that prints all arguments passed to the program.
+ * @argc: the number of arguments passed to the program.
+ * @argv: list of pointers to strings.
+ *
  * Return: zero.
  */
 
 int main(int argc, char const **argv)
 {
-int i;
-for(i = 0; i < argc; i++)
-{
-	printf("%s\n", argv[i]);
-}
-return (0);
+    int i;
+
+    for (i = 0; i < argc; i++)
+    {
+        printf("%s\n", argv[i]);
+    }
+    return (0);
 }
