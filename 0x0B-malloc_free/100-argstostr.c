@@ -21,13 +21,14 @@ char *argstostr(int ac, char **av)
 	{
 		s = s + (strlen(av[i]) + 1);
 	}
-	p = malloc(s);
+	p = malloc(s + 1);
 	if (p == NULL)
 	return (NULL);
+	p[0] = '\0';
 	for (i = 0; i < ac; i++)
 	{
 		strcat(p, av[i]);
-		p = p + '\n';
+		strcat(p, "\n");
 	}
 	return (p);
 }
