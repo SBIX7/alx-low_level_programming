@@ -20,5 +20,7 @@ char *create_array(unsigned int size, char c)
 	{
 		p[i] = c;
 	}
+	if(p == NULL)
+	return (NULL);
 	return (p);
 }
