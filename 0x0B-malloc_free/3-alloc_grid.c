@@ -1,39 +1,41 @@
-#include "main.h"
+#include <stdio.h>
 #include <stdlib.h>
 
 /**
- * alloc_grid - function that return a matrix initialized with zero
- * @width: positive integer.
- * @height: positive integer.
- * Return: pointer to matrix.
+ * alloc_grid - returns a pointer to a 2 dimensional array of integers
+ * @width: columns
+ * @height: rows
+ * Return: a pointer to a 2 dimensional array of integers
  */
-
 int **alloc_grid(int width, int height)
 {
-	int **p, i, j;
+	int **grd, col, row;
 
 	if (width <= 0 || height <= 0)
-	return (NULL);
-	p = malloc(width * sizeof(int *));
-	if (p == NULL)
+		return (NULL);
+	grd = malloc(height * sizeof(int *));
+
+	if (!grd)
 	{
-		free (p);
+		free(grd);
 		return (NULL);
 	}
-	for (i = 0; i < width; i++)
+
+	for (row = 0; row < height; row++)
 	{
-		p[i] = malloc(height * sizeof(int));
-		if (p[i] == NULL)
+		grd[row] = malloc(width * sizeof(int));
+
+		if (!grd[row])
 		{
-			for (j = 0; j < i; j++)
+			for (col = 0; col < row; col++)
 			{
-				free(p[j]);
+				free(grd[col]);
 			}
-		free(p);
-		return (NULL);
+			free(grd);
+			return (NULL);
 		}
-		for (j = 0; j < height; j++)
-		p[i][j] = 0;
+		for (col = 0; col < width; col++)
+			grd[row][col] = 0;
 	}
-	return (p);
+	return (grd);
 }
