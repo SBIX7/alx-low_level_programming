@@ -2,13 +2,14 @@
 #include <stdlib.h>
 #include <string.h>
 
-/*
- * string_nconcat: function that return two concat string.
- * @s1: first string.
- * @s2: second string.
- * @n: number of chars from s2.
+/**
+ * string_nconcat - Concatenate two strings with a limit on the second string.
+ * @s1: The first string. If NULL, it is treated as an empty string.
+ * @s2: The second string. If NULL, it is treated as an empty string.
+ * @n: Number of characters from s2 to concatenate.
  *
- * Return: an adress to the new string.
+ * Return: A pointer to the newly allocated space in memory containing
+ * the concatenated string. NULL if memory allocation fails.
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
