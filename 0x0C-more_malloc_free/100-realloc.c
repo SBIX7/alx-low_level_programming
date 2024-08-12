@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <string.h>
 
 /**
  * _realloc - function that simulate realloc
@@ -13,8 +14,6 @@
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
 	void *p;
-	unsigned int i, j = 0;
-	int *atr1, *btr2 = (int *)ptr;
 
 	if (new_size == old_size)
 	return (ptr);
@@ -30,12 +29,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	p = malloc(new_size);
 	if (p == NULL)
 	return (NULL);
-	atr1 = (int *)p;
-	for (i = 0; i < old_size; i++)
-	{
-		atr1[j] = btr2[i];
-		j++;
-	}
+	memcpy(p, ptr, old_size);
 	free(ptr);
 	return (p);
 }
