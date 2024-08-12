@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * malloc_checked functio that return an adress to a pointer.
+ * malloc_checked - functio that return an adress to a pointer.
  * @b: number of integers.
  * Return: a pointer to the adress.
  */
