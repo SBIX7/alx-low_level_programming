@@ -2,12 +2,12 @@
 #include <stdlib.h>
 #include <string.h>
 
-/*
- * _calloc - function simulate calloc
- * @nmemb: number of the elements.
- * @size: sixe of each elements.
+/**
+ * _calloc - Allocate memory for an array and initialize it to zero.
+ * @nmemb: Number of elements in the array.
+ * @size: Size of each element in bytes.
  *
- * Return: an adress.
+ * Return: A pointer to the allocated memory or NULL if allocation fails.
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
