@@ -9,6 +9,8 @@
  */
 void print_name(char *name, void (*f)(char *))
 {
+	if (!name || !f)
+		return;
 	if (f == print_name_as_is)
 	{
 		print_name_as_is(name);
