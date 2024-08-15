@@ -10,7 +10,7 @@
 int main(int argc, char **argv)
 {
 	int len, i;
-	char *op;
+	unsigned char *op;
 
 	if (argc != 2)
 	{
@@ -23,10 +23,10 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		exit(2);
 	}
-	op = (char *)main;
+	op = (unsigned char *)main;
 	for (i = 0; i < len; i++)
 	{
-		printf("%02hhx", op[i]);
+		printf("%02x", op[i]);
 		if (i < len - 1)
 		printf(" ");
 	}
