@@ -24,7 +24,7 @@ int main(int argc, char **argv)
 	}
 	for (i = 0; i < len; i++)
 	{
-		printf("%02x", op[i]);
+		printf("%02hhx", op[i]);
 		if (i < len - 1)
 		printf(" ");
 	}
