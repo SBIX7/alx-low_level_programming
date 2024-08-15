@@ -10,7 +10,7 @@
 int main(int argc, char **argv)
 {
 	int len = atoi(argv[1]), i;
-	unsigned char *op = (unsigned char *)main;
+	char *op = (char *)main;
 
 	if (argc != 2)
 	{
