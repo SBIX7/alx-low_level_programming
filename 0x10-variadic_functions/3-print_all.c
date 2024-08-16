@@ -16,6 +16,7 @@ void print_all(const char * const format, ...)
 	char *cpform;
 
 	va_start(po, format);
+	if (format)
 	while (j < len)
 	{
 		if (test == 0)
