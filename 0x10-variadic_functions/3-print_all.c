@@ -1,7 +1,6 @@
 #include <stdarg.h>
 #include "variadic_functions.h"
 #include <stdio.h>
-#include <string.h>
 
 /**
  * print_all - function that print all.
@@ -12,13 +11,11 @@
 void print_all(const char * const format, ...)
 {
 	va_list po;
-	unsigned int j = 0, len;
+	unsigned int j = 0;
 	char *cpform, *sep = "";
 
 	va_start(po, format);
-	len = strlen(format);
-	if (format)
-	while (j < len)
+	while (format[j])
 	{
 		switch (format[j])
 		{
