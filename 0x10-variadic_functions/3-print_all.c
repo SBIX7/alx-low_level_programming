@@ -15,6 +15,8 @@ void print_all(const char * const format, ...)
 	char *cpform, *sep = "";
 
 	va_start(po, format);
+	if (format)
+	{
 	while (format[j])
 	{
 		switch (format[j])
@@ -43,6 +45,7 @@ void print_all(const char * const format, ...)
 		}
 		sep = ", ";
 		j++;
+	}
 	}
 	va_end(po);
 	printf("\n");
