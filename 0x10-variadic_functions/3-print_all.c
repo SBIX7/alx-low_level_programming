@@ -12,28 +12,23 @@
 void print_all(const char * const format, ...)
 {
 	va_list po;
-	unsigned int j = 0, len, test = 1;
-	char *cpform;
+	unsigned int j = 0, len;
+	char *cpform, *sep = "";
 
 	va_start(po, format);
 	len = strlen(format);
 	while (j < len)
 	{
-		if (test == 0)
-		{
-			printf(", ");
-		}
-		test = 0;
 		switch (format[j])
 		{
 			case 'c':
-				printf("%c", va_arg(po, int));
+				printf("%s%c", sep, va_arg(po, int));
 				break;
 			case 'i':
-				printf("%d", va_arg(po, int));
+				printf("%s%d", sep, va_arg(po, int));
 				break;
 			case 'f':
-				printf("%f", va_arg(po, double));
+				printf("%s%f", sep, va_arg(po, double));
 				break;
 			case 's':
 				cpform = va_arg(po, char *);
@@ -42,11 +37,13 @@ void print_all(const char * const format, ...)
 					printf("(nil)");
 					break;
 				}
-				printf("%s", cpform);
+				printf("%s%s", sep, cpform);
 				break;
 			default:
-				test = 1;
+				j++;
+				continue;
 		}
+		sep = ", ";
 		j++;
 	}
 	va_end(po);
