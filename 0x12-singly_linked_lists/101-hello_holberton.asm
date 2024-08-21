@@ -1,5 +1,5 @@
 section .data
-	hello_holberton db "Hello, Holberton", 10, 0
+	hello_holberton db 'Hello, Holberton', 10, 0
 section .text
 extern printf
 global main
