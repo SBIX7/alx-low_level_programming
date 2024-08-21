@@ -2,8 +2,8 @@ section .data
 	hello_holberton db "Hello, Holberton", 10, 0
 section .text
 extern printf
-global _start
-_start:
+global main
+main:
 	mov rdi, hello_holberton
 	xor rax, rax
 	call printf
