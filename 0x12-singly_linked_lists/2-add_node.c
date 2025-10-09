@@ -1,5 +1,26 @@
 #include "lists.h"
 #include <string.h>
+
+/**
+ * _strlen - funvtion that count the lenght of a string
+ * @s: string
+ * Return: lenght of s
+ */
+
+int _strlen(const char *s)
+{
+	int i;
+
+	i = 0;
+
+	while (s[i] != '\0')
+	{
+		i++;
+	}
+
+	return (i);
+}
+
 /**
  * add_node - function that add a new node.
  * @head: the adress of the head of the list.
@@ -15,7 +36,7 @@ list_t *add_node(list_t **head, const char *str)
 	if (newhead == NULL)
 		return (NULL);
 	newhead->str = strdup(str);
-	newhead->len = strlen(str);
+	newhead->len = _strlen(str);
 	newhead->next = *head;
 	*head = newhead;
 	return (newhead);
